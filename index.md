@@ -13,4 +13,4 @@ I am interested in teaching formal methods, especially to undergraduate students
 
 
 ## Contacting me
-If you wish to invite me to speak at your institute or organization, send an email to `dischargedpremise`, at `gmail` dot `com`. If you wish to learn more about formal methods, *or* intend to introduce undergraduate or master's courses in your institute, I'd be glad to help you in shaping the course.
+If you wish to invite me to speak at your institute or organization, send an email to `dischargedpremise` at `gmail` dot `com`. If you wish to learn more about formal methods, *or* intend to introduce undergraduate or Master's courses in your institute, I'd be glad to help you in shaping the course.

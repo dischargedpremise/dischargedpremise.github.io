@@ -17,7 +17,7 @@ I draw inspiration from the wonderful exposition in [Verified software: theories
 
 In the past year (2016, that is), I took this vision upon myself (in a small way), and made a few modest attempts in spreading awareness about formal methods in various engineering institutes around Mangalore and Udupi. I shall narrate my experiments, and their outcomes, in the future posts.
 
-Before closing, I must mention the invigorating effect [**The First Indian SAT+SMT School**] [SAT+SMT] had on me. It was organized by [Ashutosh Gupta][1] and [Supratik Chakraborty][2], at TIFR, Mumbai (December 4-10, 2016). There were brilliant speakers and motivated participants. I intend to write more about it in a subsequent post.
+Before closing, I must mention the invigorating effect [**The First Indian SAT+SMT School**] [SAT+SMT] had on me. It was organized by [Ashutosh Gupta][1] and [Supratik Chakraborty][2], and was hosted in the serene premises of TIFR, Mumbai (December 4-10, 2016). There were brilliant speakers and motivated participants. I intend to write more about it in a subsequent post.
 
 So, see you soon!
 
