@@ -6,7 +6,7 @@ date: 2017-01-13
 
 ## Hi! Welcome to my blog
 
-My name is Devi Prasad. I am a faculty in the School of Information Sciences. Manipal University, India. I write about formal methods and their application to software verification. 
+My name is Devi Prasad. I am a faculty in the School of Information Sciences, Manipal University, India. I write about formal methods and their application to software verification. 
 
 
 I am interested in teaching formal methods, especially to undergraduate students. I am of the view that we should introduce students to rigorous methods of programming, very early - in the first programming course they take. Applying formal techniques is not at all hard. It only takes initial effort to think more clearly about programs. With practice, rigor becomes second nature.
