@@ -6,17 +6,52 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/solo.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="{{ site.baseurl }}/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ site.baseurl }}/css/blog.css" rel="stylesheet">
+  <!--link rel="stylesheet" href="{{ site.baseurl }}/css/solo.css"-->
 
 <body>
-  <article>
-   <div class="container">
-    <img src="../images/profile-background.jpg" height="auto" width="100%">
-    <h2><a href="./">{{ site.tag_text }}</a></h2>
-    {{ content }}
+  <div class="blog-masthead">
+  </div>
+    <div class="container">
+      <img src="../images/profile-background.jpg" height="auto" width="100%">
+      <div class="blog-header">
+        <h1 class="blog-title"><a href="./">{{ site.tag_text }}</a></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <p class="blog-post-meta">January 13, 2017 by <a href="#">Devi Prasad</a></p>
+                {{ content }}
+          </div><!--blog-post-->
+        </div><!--col-sm-8 blog-main-->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p> I like to compare my spirit to that of a journeyman, constantly learning from sources that bring new understanding in one or the other form. I believe in open knowledge.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">January 2017</a></li>
+              </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->  
+      </div> <!--row-->
     </div>
-  </article>
+  
+  <footer class="blog-footer">
+    <p><a href="#">Back to top</a></p>
+  </footer>
+
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

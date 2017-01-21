@@ -4,7 +4,6 @@ html {
   font: 18px/1.6 'Open Sans', sans-serif;
 }
 
-
 @media (max-width: 325px) {
   html { font: 17px/1.6 'Open Sans', sans-serif; }
 }
@@ -148,7 +147,7 @@ hr {
 }
 
 a {
-word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .container img {
@@ -208,36 +207,6 @@ pre > code {
   font-style: italic;
 }
 
-@media (max-width: 635px) {
-.sharing {
- font-size: 85%;
- }
-}
-
-/* This gets Google to fall into place */
-.social {
- text-align: right;
-}
-
-.topsocial {
-	margin-bottom: 5em;
-}
-
-/* This gets Facebook to fall into place */
-.social iframe {
-	vertical-align: middle;
-}
-
-/* Set an optional width for your button wrappers */
-.social span {
-	display: inline-block;
-	width: 110px;
-}
-
-/* Adjust the widths individually if you like */
-.social .google {
-	width: 75px;
-}
 
 .button {
   margin-top: 2em;
@@ -257,13 +226,4 @@ pre > code {
 	cursor: pointer;
 	text-decoration: none;
 	transition: 0.5s;
-}
-
-.Facebook {
-	transform: scale(1.25);
-}
-
-.sharing-buttons {
-	width: 100%;
-}
 }
