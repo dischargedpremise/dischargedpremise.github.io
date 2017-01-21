@@ -5,16 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ post.title }}</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/solo.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="{{ site.baseurl }}/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ site.baseurl }}/css/blog.css" rel="stylesheet">
 </head>
 <body>
-  <article>
-    <div class="container">
-  <img src="../images/lone-boat.jpg" height="auto" width="100%">
-      <h3>{{ post.title }}</h3>
-      {{ content }}
+  <div class="blog-top"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="{{ site.baseurl }}/images/lone-boat.jpg" height="auto" width="100%">
+        <div class="blog-header">
+          <h1 class="blog-title">
+            <a href="{{ site.baseurl }}/index.html">{{ site.tag_text }}</a>
+          </h1>
+          <hr>
+        </div>
+      </div>
     </div>
-  </article>
+    <div class="row">
+        <div class="col-sm-12 blog-main">
+          <div class="blog-post">
+            <p class="blog-post-meta">January 21, 2017 by 
+              <a href="https://github.com/dischargedpremise" target="_blank">Devi Prasad</a>
+            </p>
+              {{ content }}
+          </div><!--blog-post-->
+        </div><!--col-sm-8 blog-main-->
+      </div><!--row-->
+    </div>
+
+  <footer class="blog-footer">
+    <p><a href="#">Back to top</a></p>
+  </footer>
+
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

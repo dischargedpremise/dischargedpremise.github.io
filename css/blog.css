@@ -7,13 +7,9 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 2rem 0 5rem;
+  margin: 0 0 5rem;
   color: #222;
   height: 100%;
-}
-
-@media (max-width: 325px) {
-  html { font-size: 16px; font-family: 'Open Sans', sans-serif;}
 }
 
 blockquote {
@@ -24,27 +20,20 @@ blockquote {
   color: #562;
 }
 
-blockquote p:last-child {
-  margin-bottom: 0;
+.highlighter-rouge {
+  color: black;
+  font-weight: bold;
+  background-color: #ddd;
 }
 
-h2, .h2 {
+h2, .h2,
+h3, .h3 {
   margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
   color: #444;
   text-rendering: optimizeLegibility;
 }
-
-h3, .h3 {
-  margin-top: 1.8rem;
-  margin-bottom: 0.5rem;
-  font-size: 26px;
-  font-family: 'Open Sans', sans-serif;
-  color: #444;
-}
-
 
 /*
  * Override Bootstrap's default container.
@@ -105,11 +94,11 @@ h3, .h3 {
  */
 
 .blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 0.2rem;
 }
 .blog-title {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   color: #555;
   font-size: 4rem;
@@ -146,6 +135,10 @@ h3, .h3 {
   margin-bottom: 0;
 }
 
+.list-simple-padded-2rem > li {
+  padding-left: 1.5rem;
+  padding-bottom: 1\px;
+}
 
 /* Pagination */
 .pager {
@@ -165,30 +158,43 @@ h3, .h3 {
  */
 
 .blog-post {
-  margin-bottom: 60px;
-  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5rem;
   font-size: 18px;
   line-height: 1.6;
 }
 .blog-post-title {
-  margin-bottom: 5px;
-  font-size: 30px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
 }
 
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 /*
  * Footer
  */
+ .blog-top {
+   margin: 0 0 1em 0;
+   padding: 1px;
+   background-color: #ccc;
+   border-top: 1px solid #e5e5e5;
+ }
 
 .blog-footer {
   padding: 3.5rem;
-  color: #999;
+  color: blue;
   text-align: center;
-  background-color: #eee;
+  background-color: #ccc;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {
