@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: hello
 title: Hello, World!
 permalink: /hello-world.html/
 tags: [casual, SAT, SMT, VSI]
-data: 2017-01-15
+date: 2017-01-15
 ---
 
 ## Hello, World!

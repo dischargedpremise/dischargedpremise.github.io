@@ -17,6 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
+        <img src="{{ site.baseurl }}/images/lone-boat.jpg" height="auto" width="100%">
         <div class="blog-header">
           <h1 class="blog-title">
             <a href="{{ site.baseurl }}/index.html">{{ site.tag_text }}</a>
@@ -26,10 +27,9 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-sm-11 blog-main">
+        <div class="col-sm-12 blog-main">
           <div class="blog-post">
-            <p class="blog-post-meta">tags: {{ page.tags }}</p>
-            <p class="blog-post-meta">{{ page.date }} by 
+            <p class="blog-post-meta">January 15, 2017 by 
               <a href="https://github.com/dischargedpremise" target="_blank">Devi Prasad</a>
             </p>
               {{ content }}
@@ -42,8 +42,8 @@
     <p><a href="#">Back to top</a></p>
   </footer>
 
-  <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="{{ site.baseurl }}/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="../../js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
