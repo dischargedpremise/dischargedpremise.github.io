@@ -54,8 +54,9 @@ When we run `max2` and `check_max2` through Dafny verifier, it produces an error
 max2.dfy(...): Error: assertion violation
 ```
 
-This error message is noteworthy. It strikingly highlights the key fact that program verification is entirely unlike program testing! If Dafny were to merely execute the program comprising of the two methods shown above, `check_max2` would have played the role of a unit test, and the test would have obviously passed. However, the verifier reports an assertion violation much like a startling revelation!
+>This error message is striking. It highlights the fact that **program verification is entirely unlike program testing**. If Dafny were to merely execute the program comprising of the two methods shown above, `check_max2` would have played the role of a unit test, and the test would have obviously passed. However, the verifier reports an assertion violation much like a startling revelation!
 
+### Attesting with postconditions
 It is essential to notice that the verifier simply does not have adequate information to statically deduce required properties of `max2`. Dafny does not know what to verify in the first place. It needs to know what we logically expect of `max2`!
 
 For verification to succeed, we must supply more information about the relation between the inputs and the output of `max2`. Dafny could then check that the implementation really satisfies these requirements. Once that is achieved, Dafny will be able to prove that our assertion holds in `check_max2`. 
@@ -93,7 +94,7 @@ method another_check_max2()
 }
 ```
 
-Notice the difference with <a href="./#check_max2">check_max2</a>. The current assertion essentially requires the postcondition that we explicitly left unspecified: the relation between inputs and the output when value `a` is less than value `b`. Would the verifier be able to establish this requirement on its own?
+Notice the difference with <a href="./#check_max2">check_max2</a>. The current assertion essentially requires the postcondition that we explicitly left unspecified: the relation between inputs and the output, particularly when value `a` is less than value `b`. Would the verifier be able to establish this requirement on its own?
 
 When checked, Dafny breaks the bad news:
 
@@ -101,7 +102,9 @@ When checked, Dafny breaks the bad news:
 max.dfy(...): Error: assertion violation  
 ```
 
-This reveals another crucial aspect of program verifiers. These sophisticated tools do not inspect the program text while checking requirements (expressed with assers, as shown above). A verifier establishes the correctness of a requirement solely on the basis of the preconditions and postconditions specified in required program units. In this case, <a href="./#max2-one-post-cond">max2</a> is underspecified. This indicates that we should always strive to make postconditions as strong as possible. Thus, we supply the required postcondition in the renewed definition of <a href="./#max2-two-post-conds">max2</a>: 
+>This reveals another crucial aspect of program verification. The verifier does not inspect the program text of `max2` while checking requirements (expressed with asserts, as shown above). It attempts to establish program correctness solely on the basis of preconditions and postconditions specified on `max2`. In this case, <a href="./#max2-one-post-cond">max2</a> is underspecified. Therefore, it is desirable to make postconditions as strong as possible. 
+
+We now supply the required postcondition in the renewed definition of <a href="./#max2-two-post-conds">max2</a>: 
 
 ```
 method max2(a: int, b: int) returns (max: int)
@@ -142,8 +145,8 @@ Dafny reports that our program successfully meets all the requirements:
 Dafny program verifier finished with 4 verified, 0 errors
 ```
 
-It is always delightful to be sure that our program is proved correct with respect to a set of formally specified requirements.
-
+## Conclusion
+It is good to be sure that our program is correct with respect to formally specified requirements. We wrote postconditions to accurately capture the relation between inputs and the output, which enabled Dafny to prove that our program actually satisfies the requirements. In general, it takes more than mere postconditions to prove the correctness of complex programs. We will be required to augment programs with *preconditions* and postcondtions. We will see more of these ideas in other articles of this blog.
 
 
 [1]: https://github.com/dischargedpremise/program-verification/blob/master/dafny/intro/max2.dfy
